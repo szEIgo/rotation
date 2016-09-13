@@ -8,7 +8,7 @@ var app = require('../app');
 var debug = require('debug')('Rotation:server');
 var http = require('http');
 var db = require("../db/db");
-var connection_string = "mongodb://xxxxxxxxxxxxxxxxxx";
+var connection_string = "mongodb://admin:admin@ds029476.mlab.com:29476/rotation";
 db.connect(connection_string,function(err){
   if(err){
     console.log("Could not connect to Database");
